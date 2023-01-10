@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Cricket</title>
+    <style>
+        .field{
+            border: 2px solid green;
+            background-color: rgba(0, 128, 0, 0.34);
+            height: 300px;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .bat{
+            max-width: 200px;
+            height: 100%;
+            transition: transform .2s ease-in;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            position: relative;
+            left: 354px;
+            bottom: 100px;
+            transition: transform 1s ease-out .2s;
+            box-shadow: 1px 1px 1px 1px red;
+        }
+        .field:hover .ball {
+            transform: translate(1500px, -300px);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Play Cricket Using Transform, Translate & Position</h2>
+
+    <div class="field">
+        <img class="bat" src="bat.png" alt="">
+        <div class="ball"></div>
+    </div>
+
+    
+</body>
+</html>
